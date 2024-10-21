@@ -10,6 +10,22 @@ A decir verdad no he hecho nada novedoso, lo más tedioso fue listar todas los d
 
 Específicamente, el polinomio cromático de Colombia es
 
+<script type="math/tex; mode=display">
+  \begin{align*}
+        \chi(G_{\text{Col}},t)&=t^{33}-72 t^{32}+2514 t^{31}\\
+        &\quad-56703 t^{30}+928416 t^{29}-11757140 t^{28}\\
+        &\quad+119803182 t^{27}-1008989839 t^{26}+7159276765 t^{25}\\
+        &\quad-43406309014 t^{24}+227281194275 t^{23}-1036142031322 t^{22}\\
+        &\quad+4137985048853 t^{21}-14543216293518 t^{20}+45128702300210 t^{19}\\
+        &\quad-123904692011141 t^{18}+301323104920452 t^{17}-649111128011288 t^{16}\\
+        &\quad+1237494226626151 t^{15}-2083729861163011 t^{14}+3089197236230153 t^{13}\\
+        &\quad-4014284821039240 t^{12}+4544515915061124 t^{11}-4446080022163760 t^{10}\\
+        &\quad+3719159851081504 t^9-2622562341468416 t^8+1529179876264320 t^7\\
+        &\quad-717670769635584 t^6+260520144880896 t^5-68636197988352 t^4\\
+        &\quad+11673935115264 t^3-961919815680 t^2
+    \end{align*}
+</script>
+
 Todos los detalles formales de $\chi(G,t)$ pueden ser consultados en el artículo [_**'How many ways to color the map of America?'**_](https://arxiv.org/abs/1908.05694) donde prueban varias propiedades del polinomio cromático y cuentan cuántas formas hay de colorear los mapas de Canadá, Francia y EEUU.
 
 Este problema crece de forma exponencial gracias a la recurrencia anterior, así que es computacionalmente complejo calcular el polinomio cromático de un grafo si el número de aristas es muy grande. Es por esto que me gustaría, por puro pasatiempo, calcular el polinomio cromático de Colombia usando los teoremas mencionados en el artículo. La forma que por el momento se me ocurre es separar los 3-ciclos en la parte superior del mapa y separar la 6-rueda que proviene del departamento de Santander. También se puede separar el 3-ciclo de Nariño, y tal vez usar el teorema principal de dicho artículo, que permite reducir el polinomio cromático de la intersección de los dos grafos rueda de Caquetá y Guaviare. Sigo pensándolo, pero si alguien más se anima, adelante.
