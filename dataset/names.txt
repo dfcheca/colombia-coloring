@@ -1,0 +1,33 @@
+Amazonas -> AM
+Antioquia -> AN
+Arauca -> AR
+Atlántico -> AT
+Bogotá -> BG
+Bolívar -> BL
+Boyacá -> BY
+Caldas -> CL
+Caquetá -> CQ
+Casanare -> CS
+Cauca -> CC
+Cesar -> CE
+Chocó -> CH
+Córdoba -> CO
+Cundinamarca -> CU
+Guainía -> GN
+Guaviare -> GV
+Huila -> HU
+La Guajira -> LG
+Magdalena -> MA
+Meta -> ME
+Nariño -> NA
+Norte -> NS
+Putumayo -> PU
+Quindío -> QU
+Risaralda -> RI
+San Andrés y Providencia -> SP
+Santander -> SA
+Sucre -> SU
+Tolima -> TO
+Valle -> VC
+Vaupés -> VP
+Vichada -> VI

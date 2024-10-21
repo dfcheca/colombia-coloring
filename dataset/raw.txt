@@ -1,0 +1,33 @@
+1. Amazonas: Caquetá, Putumayo, Vaupés
+2. Antioquia: Bolívar, Boyacá, Caldas, Chocó, Córdoba, Risaralda, Santander
+3. Arauca: Boyacá, Casanare, Vichada
+4. Atlántico: Bolívar, Magdalena
+5. Bogotá: Cundinamarca, Huila, Meta
+6. Bolívar: Atlántico, Antioquia, Cesar, Córdoba, Magdalena, Sucre, Santander
+7. Boyacá: Antioquia, Arauca, Caldas, Casanare, Cundinamarca, Norte de Santander, Santander
+8. Caldas: Antioquia, Boyacá, Cundinamarca, Risaralda, Tolima
+9. Caquetá: Amazonas, Cauca, Guaviare, Huila, Meta, Putumayo, Vaupés
+10. Casanare: Arauca, Boyacá, Meta, Vichada
+11. Cauca: Caquetá, Huila, Nariño, Putumayo, Tolima, Valle del Cauca
+12. Cesar: Bolívar, La Guajira, Magdalena, Norte de Santander, Santander
+13. Chocó: Antioquia, Risaralda, Valle del Cauca
+14. Córdoba: Antioquia, Bolívar, Sucre
+15. Cundinamarca: Bogotá, Boyacá, Caldas, Huila, Meta, Tolima
+16. Guainía: Guaviare, Vaupés, Vichada
+17. Guaviare: Caquetá, Guainía, Meta, Vaupés, Vichada
+18. Huila: Bogotá, Caquetá, Cauca, Cundinamarca, Meta, Tolima
+19. La Guajira: Cesar, Magdalena
+20. Magdalena: Atlántico, Bolívar, Cesar, La Guajira
+21. Meta: Bogotá, Caquetá, Casanare, Cundinamarca, Guaviare, Huila, Vichada
+22. Nariño: Cauca, Putumayo
+23. Norte de Santander: Boyacá, Cesar, Santander
+24. Putumayo: Amazonas, Cauca, Caquetá, Nariño
+25. Quindío: Tolima, Risaralda, Valle del Cauca
+26. Risaralda: Antioquia, Caldas, Chocó, Quindío, Tolima, Valle del Cauca
+27. San Andrés y Providencia:
+28. Santander: Antioquia, Bolívar, Boyacá, Cesar, Norte de Santander
+29. Sucre: Bolívar, Córdoba
+30. Tolima: Caldas, Cauca, Cundinamarca, Huila, Quindío, Risaralda, Valle del Cauca
+31. Valle del Cauca: Cauca, Chocó, Tolima, Quindío, Risaralda
+32. Vaupés: Amazonas, Caquetá, Guainía, Guaviare
+33. Vichada: Arauca, Casanare, Guainía, Guaviare, Meta

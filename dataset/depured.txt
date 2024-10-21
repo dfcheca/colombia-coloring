@@ -1,0 +1,33 @@
+1. AM: CQ, PU, VP
+2. AN: BL, BY, CL, CH, CO, RI, SA
+3. AR: BY, CS, VI
+4. AT: BL, MA
+5. BG: CU, HU, ME
+6. BL: AT, AN, CE, CO, MA, SU, SA
+7. BY: AN, AR, CL, CS, CU, NS, SA
+8. CL: AN, BY, CU, RI, TO
+9. CQ: AM, CC, GV, HU, ME, PU, VP
+10. CS: AR, BY, ME, VI
+11. CC: CQ, HU, NA, PU, TO, VC
+12. CE: BL, LG, MA, NS, SA
+13. CH: AN, RI, VC
+14. CO: AN, BL, SU
+15. CU: BG, BY, CL, HU, ME, TO
+16. GN: GV, VP, VI
+17. GV: CQ, GN, ME, VP, VI
+18. HU: BG, CQ, CC, CU, ME, TO
+19. LG: CE, MA
+20. MA: AT, BL, CE, LG
+21. ME: BG, CQ, CS, CU, GV, HU, VI
+22. NA: CC, PU
+23. NS: BY, CE, SA
+24. PU: AM, CC, CQ, NA
+25. QU: TO, RI, VC
+26. RI: AN, CL, CH, QU, TO, VC
+27. SP:
+28. SA: AN, BL, BY, CE, NS
+29. SU: BL, CO
+30. TO: CL, CC, CU, HU, QU, RI, VC
+31. VC: CC, CH, TO, QU, RI
+32. VP: AM, CQ, GN, GV
+33. VI: AR, CS, GN, GV, ME
