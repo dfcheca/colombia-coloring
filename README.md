@@ -10,9 +10,9 @@ A decir verdad no he hecho nada novedoso, lo más tedioso fue listar todas los d
 
 Específicamente, el polinomio cromático de Colombia es
 
-<script type="math/tex; mode=display">
-  E=mc^2
-</script>
+```math
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
 
 Todos los detalles formales de $\chi(G,t)$ pueden ser consultados en el artículo [_**'How many ways to color the map of America?'**_](https://arxiv.org/abs/1908.05694) donde prueban varias propiedades del polinomio cromático y cuentan cuántas formas hay de colorear los mapas de Canadá, Francia y EEUU.
 
