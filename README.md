@@ -1,9 +1,9 @@
 # ¿De cuántas formas se puede colorear el mapa de Colombia 🇨🇴? / How many ways to color the map of Colombia 🇨🇴?
 
 Hola a todxs, desde cualquier parte del mundo. He calculado que el número de formas de colorear el mapa de Colombia sin que dos regiones adyacentes compartan color, usando solamente 4 colores, es:<br>
-```math
-283\ 115\ 520
-```
+<div align="center">
+  <h3>283 115 520</h3>
+</div>
 <br>
 Cabe anotar que he considerado a Bogotá como un departamento aislado, y el archipiélago de San Andrés y Providencia se pinta de un solo color.
 
