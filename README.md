@@ -72,13 +72,7 @@ How did I do it? In Wolfram Mathematica, there is a very simple command that all
   _Background image retrieved from [Wikipedia](https://es.m.wikipedia.org/wiki/Archivo:Mapa_de_Colombia_(departamentos).svg)_
 </div>
 
-To be honest, I have not done anything groundbreaking; the most tedious part was listing all the departments of Colombia and their boundaries by hand. Once this was done, the program does the rest of the work based on a well-known theorem called the deletion-contraction theorem, which states that if \(\chi(G,t)\) represents the number of ways to color a graph \(G\) using only \(t\) colors, and if \(e\) is an edge of the graph, then 
-
-\[
-\chi(G, t)=\chi(G-e, t)-\chi(G / e, t),
-\] 
-
-where \(G-e\) is the graph obtained by removing the edge \(e\), and \(G/e\) is the graph that results from merging the vertices connected by \(e\) into a single vertex and considering multiple edges as a single edge. It is thanks to this recurrence that \(\chi(G,t)\) is indeed a polynomial, called the chromatic polynomial of \(G\).
+To be honest, I have not done anything groundbreaking; the most tedious part was listing all the departments of Colombia and their boundaries by hand. Once this was done, the program does the rest of the work based on a well-known theorem called the deletion-contraction theorem, which states that if $\chi(G,t)$ represents the number of ways to color a graph $G$ using only $t$ colors, and if $e$ is an edge of the graph, then $\chi(G, t)=\chi(G-e, t)-\chi(G / e, t)$, where $G-e$ is the graph obtained by removing the edge $e$, and $G/e$ is the graph that results from merging the vertices connected by $e$ into a single vertex and considering multiple edges as a single edge. It is thanks to this recurrence that $\chi(G,t)$ is indeed a polynomial, called the chromatic polynomial of $G$.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/9d5d99ac-e16d-4cc8-ad3a-918ac62a7395" alt="Calculation of the Polynomial in Mathematica" width="500"/>
@@ -103,7 +97,7 @@ Specifically, the chromatic polynomial of Colombia is
 ```
 <br>
 
-All the formal details of \(\chi(G,t)\) can be consulted in the article _[**'How many ways to color the map of America?'**](https://arxiv.org/abs/1908.05694)_ where several properties of the chromatic polynomial are proved, and it is counted how many ways there are to color the maps of Canada, France, and the USA.
+All the formal details of $\chi(G,t)$ can be consulted in the article _[**'How many ways to color the map of America?'**](https://arxiv.org/abs/1908.05694)_ where several properties of the chromatic polynomial are proved, and it is counted how many ways there are to color the maps of Canada, France, and the USA.
 
 This problem grows exponentially due to the previous recurrence, so it is computationally complex to calculate the chromatic polynomial of a graph if the number of edges is very large. That is why I would like, purely for fun, to calculate the chromatic polynomial of Colombia using the theorems mentioned in the article. The approach that I currently have in mind is to separate the 3-cycles at the top of the map and to isolate the 6-wheel coming from the department of Santander. One could also separate the 3-cycle of Nariño and perhaps use the main theorem of that article, which allows reducing the chromatic polynomial of the intersection of the two graphs, the wheels of Caquetá and Guaviare. I am still thinking about it, but if anyone else is encouraged, go ahead.
 
