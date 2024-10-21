@@ -38,7 +38,7 @@ Específicamente, el polinomio cromático de Colombia es
 \end{align*}
 ```
 <br>
-Todos los detalles formales de $\chi(G,t)$ pueden ser consultados en el artículo [_**'How many ways to color the map of America?'**_](https://arxiv.org/abs/1908.05694) donde prueban varias propiedades del polinomio cromático y cuentan cuántas formas hay de colorear los mapas de Canadá, Francia y EEUU.
+Todos los detalles formales de $$\chi(G,t)$$ pueden ser consultados en el artículo _[**'How many ways to color the map of America?'**](https://arxiv.org/abs/1908.05694)_ donde prueban varias propiedades del polinomio cromático y cuentan cuántas formas hay de colorear los mapas de Canadá, Francia y EEUU.
 
 Este problema crece de forma exponencial gracias a la recurrencia anterior, así que es computacionalmente complejo calcular el polinomio cromático de un grafo si el número de aristas es muy grande. Es por esto que me gustaría, por puro pasatiempo, calcular el polinomio cromático de Colombia usando los teoremas mencionados en el artículo. La forma que por el momento se me ocurre es separar los 3-ciclos en la parte superior del mapa y separar la 6-rueda que proviene del departamento de Santander. También se puede separar el 3-ciclo de Nariño, y tal vez usar el teorema principal de dicho artículo, que permite reducir el polinomio cromático de la intersección de los dos grafos rueda de Caquetá y Guaviare. Sigo pensándolo, pero si alguien más se anima, adelante.
 
