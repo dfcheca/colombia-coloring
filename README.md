@@ -1,16 +1,17 @@
 # ¿De cuántas formas se puede colorear el mapa de Colombia 🇨🇴? / How many ways to color the map of Colombia 🇨🇴?
 
-Hola a todxs, desde cualquier parte del mundo. He calculado que el número de formas de colorear el mapa de Colombia sin que dos regiones adyacentes compartan color, usando solamente 4 colores, es:
+Hola a todxs, desde cualquier parte del mundo. He calculado que el número de formas de colorear el mapa de Colombia sin que dos regiones adyacentes compartan color, usando solamente 4 colores, es:<br>
 ```math
 283\ 115\ 520
 ```
-
+<br>
 Cabe anotar que he considerado a Bogotá como un departamento aislado, y el archipiélago de San Andrés y Providencia se pinta de un solo color.
 
 ¿Cómo lo he hecho? En Wolfram Mathematica hay un comando muy sencillo que permite calcular el polinomio cromático de cualquier grafo planar. Para quienes no sean conocedores del tema, el problema de colorear un mapa se puede traducir en cómo colorear los vértices de un grafo planar sin que dos vértices adyacentes queden coloreados por el mismo color. Esto lo podemos hacer ya que hay una correspondencia entre ambos objetos si a cada departamento le asignamos un vértice en un grafo, y dibujamos una arista en caso de que dos regiones compartan una frontera cuya longitud sea positiva, es decir, no consideraremos como fronteras aquellas regiones que se toquen en esquinas. Como dato curioso, el único cuatrifinio (cuatro esquinas) de Colombia está en las fronteras de Boyacá, Casanare, Cundinamarca y Meta.
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/2e2cee12-287f-4cfd-9546-9c80d037e079" alt="Grafo del mapa de Colombia" width="300"/>
+  <img src="https://github.com/user-attachments/assets/2e2cee12-287f-4cfd-9546-9c80d037e079" alt="Grafo del mapa de Colombia" width="500"/>
 </div>
+
 _Imagen de fondo recuperada de [Wikipedia](https://es.m.wikipedia.org/wiki/Archivo:Mapa_de_Colombia_(departamentos).svg)_
 
 A decir verdad no he hecho nada novedoso, lo más tedioso fue listar todas los departamentos de Colombia y sus fronteras a mano. Una vez hecho esto, el programa hace el resto del trabajo basándose en un teorema muy conocido, llamado el teorema de eliminación-contracción, que dice que si $\chi(G,t)$ representa el número de formas de colorear un grafo $G$ empleando solamente $t$ colores, y si $e$ es una arista del grafo, entonces $$\chi(G, t)=\chi(G-e, t)-\chi(G / e, t),$$ donde $G-e$ es el grafo obtenido a partir de quitar la arista $e$, y $G/e$ es el grafo que resulta de juntar los vértices que une $e$ en un solo vértice y si quedan aristas dobles considerarlas como una sola. Es gracias a esta recurrencia que $\chi(G,t)$ es de hecho un polinomio, llamado el polinomio cromático de $G$.
