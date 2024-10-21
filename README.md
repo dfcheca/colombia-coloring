@@ -8,7 +8,9 @@ Hola a todxs, desde cualquier parte del mundo. He calculado que el número de fo
 Cabe anotar que he considerado a Bogotá como un departamento aislado, y el archipiélago de San Andrés y Providencia se pinta de un solo color.
 
 ¿Cómo lo he hecho? En Wolfram Mathematica hay un comando muy sencillo que permite calcular el polinomio cromático de cualquier grafo planar. Para quienes no sean conocedores del tema, el problema de colorear un mapa se puede traducir en cómo colorear los vértices de un grafo planar sin que dos vértices adyacentes queden coloreados por el mismo color. Esto lo podemos hacer ya que hay una correspondencia entre ambos objetos si a cada departamento le asignamos un vértice en un grafo, y dibujamos una arista en caso de que dos regiones compartan una frontera cuya longitud sea positiva, es decir, no consideraremos como fronteras aquellas regiones que se toquen en esquinas. Como dato curioso, el único cuatrifinio (cuatro esquinas) de Colombia está en las fronteras de Boyacá, Casanare, Cundinamarca y Meta.
+
 <br>
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/2e2cee12-287f-4cfd-9546-9c80d037e079" alt="Grafo del mapa de Colombia" width="500"/>
   
