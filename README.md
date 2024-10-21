@@ -53,7 +53,7 @@ Queda a disposición de cualquiera el dataset de las fronteras de Colombia, con 
 ¡Saludos!
 <br>
 
-##_English version_
+##English version
 
 Hello everyone, from anywhere in the world. I have calculated that the number of ways to color the map of Colombia such that no two adjacent regions share the same color, using only 4 colors, is:  
 <div align="center">
