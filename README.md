@@ -51,3 +51,64 @@ La razón por la que pensé en este problema fue gracias a una conferencia (buen
 Queda a disposición de cualquiera el dataset de las fronteras de Colombia, con esto pueden reconstruir el grafo y calcular otro tipo de objetos interesantes, como su matriz de adyacencia, etc. Solo no olviden citar este sitio.
 
 ¡Saludos!
+<br>
+
+##_English version_
+
+Hello everyone, from anywhere in the world. I have calculated that the number of ways to color the map of Colombia such that no two adjacent regions share the same color, using only 4 colors, is:  
+<div align="center">
+  <h3>283 115 520</h3>
+</div>
+
+It should be noted that I have considered Bogotá as an isolated department, and the archipelago of San Andrés and Providencia is painted with a single color.
+
+How did I do it? In Wolfram Mathematica, there is a very simple command that allows calculating the chromatic polynomial of any planar graph. For those who are not familiar with the topic, the problem of coloring a map can be translated into how to color the vertices of a planar graph without two adjacent vertices being colored the same. We can do this because there is a correspondence between both objects if we assign a vertex in a graph to each department and draw an edge in case two regions share a boundary with positive length; that is, we will not consider as boundaries those regions that touch at corners. As a curious fact, the only quadrilateral (four corners) in Colombia is at the borders of Boyacá, Casanare, Cundinamarca, and Meta.
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2e2cee12-287f-4cfd-9546-9c80d037e079" alt="Graph of the map of Colombia" width="500"/>
+  
+  _Background image retrieved from [Wikipedia](https://es.m.wikipedia.org/wiki/Archivo:Mapa_de_Colombia_(departamentos).svg)_
+</div>
+
+To be honest, I have not done anything groundbreaking; the most tedious part was listing all the departments of Colombia and their boundaries by hand. Once this was done, the program does the rest of the work based on a well-known theorem called the deletion-contraction theorem, which states that if \(\chi(G,t)\) represents the number of ways to color a graph \(G\) using only \(t\) colors, and if \(e\) is an edge of the graph, then 
+
+\[
+\chi(G, t)=\chi(G-e, t)-\chi(G / e, t),
+\] 
+
+where \(G-e\) is the graph obtained by removing the edge \(e\), and \(G/e\) is the graph that results from merging the vertices connected by \(e\) into a single vertex and considering multiple edges as a single edge. It is thanks to this recurrence that \(\chi(G,t)\) is indeed a polynomial, called the chromatic polynomial of \(G\).
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9d5d99ac-e16d-4cc8-ad3a-918ac62a7395" alt="Calculation of the Polynomial in Mathematica" width="500"/>
+</div>
+<br>
+Specifically, the chromatic polynomial of Colombia is
+
+```math
+\begin{align*}
+    \chi(G_{\text{Col}},t)&=t^{33}-72 t^{32}+2514 t^{31}\\
+    &\quad-56703 t^{30}+928416 t^{29}-11757140 t^{28}\\
+    &\quad+119803182 t^{27}-1008989839 t^{26}+7159276765 t^{25}\\
+    &\quad-43406309014 t^{24}+227281194275 t^{23}-1036142031322 t^{22}\\
+    &\quad+4137985048853 t^{21}-14543216293518 t^{20}+45128702300210 t^{19}\\
+    &\quad-123904692011141 t^{18}+301323104920452 t^{17}-649111128011288 t^{16}\\
+    &\quad+1237494226626151 t^{15}-2083729861163011 t^{14}+3089197236230153 t^{13}\\
+    &\quad-4014284821039240 t^{12}+4544515915061124 t^{11}-4446080022163760 t^{10}\\
+    &\quad+3719159851081504 t^9-2622562341468416 t^8+1529179876264320 t^7\\
+    &\quad-717670769635584 t^6+260520144880896 t^5-68636197988352 t^4\\
+    &\quad+11673935115264 t^3-961919815680 t^2.
+\end{align*}
+```
+<br>
+
+All the formal details of \(\chi(G,t)\) can be consulted in the article _[**'How many ways to color the map of America?'**](https://arxiv.org/abs/1908.05694)_ where several properties of the chromatic polynomial are proved, and it is counted how many ways there are to color the maps of Canada, France, and the USA.
+
+This problem grows exponentially due to the previous recurrence, so it is computationally complex to calculate the chromatic polynomial of a graph if the number of edges is very large. That is why I would like, purely for fun, to calculate the chromatic polynomial of Colombia using the theorems mentioned in the article. The approach that I currently have in mind is to separate the 3-cycles at the top of the map and to isolate the 6-wheel coming from the department of Santander. One could also separate the 3-cycle of Nariño and perhaps use the main theorem of that article, which allows reducing the chromatic polynomial of the intersection of the two graphs, the wheels of Caquetá and Guaviare. I am still thinking about it, but if anyone else is encouraged, go ahead.
+
+The reason I thought of this problem was thanks to an excellent conference given by [Federico Ardila](https://fardila.com/) at the 2023 Colombian Mathematics Congress, where he talked to us about matroid theory and its possible applications to graph coloring. He encouraged us to calculate the chromatic polynomial of Colombia, telling us to notify him once we computed it. I thought it would be very difficult and thus postponed it, but after a year and a half, here it is. Please let him know.
+
+The dataset of the borders of Colombia is available for anyone; with this, you can reconstruct the graph and calculate other interesting objects, such as its adjacency matrix, etc. Just do not forget to cite this site.
+
+Best regards!
